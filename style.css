@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: auto;
+  max-width: 80%;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+button {
+  flex: 0 0 50px;
+  border: solid 2px gray;
+  border-radius: 5px;
+}
+
+section div {
+  border: solid 2px gray;
+  border-radius: 5px;
+  margin: 0 3px;
+}
+
+section div img {
+  block-size: fit-content;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  padding: 1rem;
+}
+
+article div {
+  padding: 3px;
+  border: solid 2px gray;
+  border-radius: 5px;
+  block-size: fit-content;
+  flex: 0 0 calc(33% - 5px);
+}
+
+article div img {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.szegely {
+  border: 10px solid rgb(69, 69, 73);
+  padding: 0;
+}
+
+@media screen and (max-width: 780px) {
+  article div {
+    flex: 0 0 calc(50% - 5px);
+  }
+}
